@@ -1,1 +1,33 @@
-.
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int size;
+
+    
+    cout << "Enter the number of scores: ";
+    cin >> size;
+
+  
+    int* scores =  int new [size];
+
+    
+    cout << "Enter the scores:\n";
+    for (int i = 0; i < size; i++) {
+        cout << "Score " << (i + 1) << ": ";
+        cin >> scores[i];
+    }
+
+    
+    cout << "\nScores entered:\n";
+    for (int i = 0; i < size; i++) {
+        cout << "Score " << (i + 1) << ": " << scores[i] << endl;
+    }
+
+   
+   
+   
+    
+
+    return 0;
